@@ -10,145 +10,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta http-equiv="content-language" content="ru" />
     <meta http-equiv="x-dns-prefetch-control" content="on" />
-
+    <!--
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" integrity="sha256-UXesixbeLkB/UYxVTzuj/gg3+LMzgwAmg3zD+C4ZASQ=" crossorigin="anonymous">
-<link rel="stylesheet" href="theme/fonts/raleway/font.css">
-
+-->
+    <link rel="stylesheet" href="theme/css/semantic.min.css">
+    <link rel="stylesheet" href="theme/fonts/raleway/font.css">
     <style media="print">
-@media only print {
-    body {
-        background-color: white;
+    @media only print {
+        body {
+            background-color: white;
+        }
+
+        body * {
+            display: none !important;
+        }
+
+        body:after {
+            content: "Не пачкай бумагу :)";
+            display: block;
+            font-size: 20px;
+            font-family: 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            background-color: white;
+            text-align: center;
+            width: 100%;
+            top: 50%;
+            position: absolute;
+            margin: 0 auto;
+        }
+    }
+    </style>
+    <style media="screen">
+    body.beautiful,
+    body.beautiful .ui.text.container {
+        font-family: Raleway;
     }
 
-    body * {
-        display: none !important;
+    header .beautiful.header,
+    footer .beautiful.header {
+        font-family: Raleway;
+        font-weight: 100;
+        font-size: 4em;
     }
 
-    body:after {
-        content: "Не пачкай бумагу :)";
-        display: block;
-        font-size: 20px;
-        font-family: 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        background-color: white;
-        text-align: center;
+    .beautiful.fullscreen {
+        min-height: 100vh
+    }
+
+    .beautiful.fullheight {
+        height: 100%
+    }
+
+
+
+    .wallpaper {
+        background-color: rgba(230, 215, 210, 0.4);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        background-blend-mode: overlay;
+    }
+
+    #wiki.wallpaper {
+        background-image: url('./theme/images/1200px-Colors_of_Altiplano_Boliviano_4340m_Bolivia_Luca_Galuzzi_2006.jpg');
+        background-color: rgba(230, 215, 210, 0.89);
+        min-height: 1000px;
+    }
+
+    header,
+    section {
+        box-shadow: 0 -1px 20px 0px #767676
+    }
+
+/*
+    header.beautiful.fullscreen.fullheight.wallpaper {
+        position: fixed;
         width: 100%;
-        top: 50%;
-        position: absolute;
-        margin: 0 auto;
     }
-}
-</style>
-    
-    
-    
-<style media="screen">
 
-body.beautiful,
-body.beautiful .ui.text.container {
-font-family: Raleway;
-}
+    #wiki.wallpaper {
+        position: relative;
+        top: 100%;
+    }
+*/
 
-header .beautiful.header {
-    font-family: Raleway;
-    font-weight: 100;
-    font-size:4em;
+    section, footer {
+        padding-top: 6em;
+    }
+
+    footer {
+background-color: rgba(0, 0, 0, 0.57);
 }
 
-.beautiful.fullscreen {
-    min-height: 100vh
-}
-
-.beautiful.fullheight {
-    height: 100%
-}
-
-
-
-.wallpaper {
-    background-color: rgba(230, 215, 210, 0.4);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    background-blend-mode: overlay;
-}
-
-#wiki.wallpaper {
-    background-image: url('./theme/images/1200px-Colors_of_Altiplano_Boliviano_4340m_Bolivia_Luca_Galuzzi_2006.jpg');
-    background-color: rgba(230, 215, 210, 0.89);
-    min-height: 1000px;
-    position: relative;
-    top: 100%;
-}
-
-header, section {
-    box-shadow: inset 0 -5px 20px -10px rgba(0, 0, 0, .5)
-}
-
-header.beautiful.fullscreen.fullheight.wallpaper {
-position: fixed;
-width: 100%;
-}
-
-section {
-padding-top: 6em;
-}
-
-</style>
-
+    </style>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="beautiful page main">
     <header role="banner" class="beautiful fullscreen fullheight wallpaper">
-            <div class="ui doubling stackable centered grid container">
-                <div class="beautiful fullscreen middle aligned row">
-                
-                    <div class="center aligned four wide computer ten wide tablet sixteen wide mobile column">
-
-                        <img class="ui centered fluid image" src="./theme/images/ametrine_natural_quartz.png" alt="ametrine_natural_quartz">
-
-                    <h1 class="beautiful ui header"><span class="content">Ametrine</span><div class="beautiful sub header">Bolivian Ametrine Mine • Moscow office</div></h1></div>
+        <div class="ui doubling stackable centered grid container">
+            <div class="beautiful fullscreen middle aligned row">
+                <div class="center aligned column">
+                    <img class="ui centered medium image" src="./theme/images/tinified__ametrine_natural_quartz.png" alt="ametrine_natural_quartz">
+                    <h1 class="beautiful ui header"><span class="content">Ametrine</span>
+                        <div class="beautiful sub header">Bolivian Ametrine Mine • Moscow office</div>
+                    </h1>
                 </div>
             </div>
+        </div>
     </header>
     <section role="article" id="wiki" class="beautiful fullscreen fullheight wallpaper">
- 
- <div class="ui text container">
-<h2>Wikipedia</h2>
-<p>Ametrine, also known as trystine or by its trade name as bolivianite, is a naturally occurring variety of quartz. It is a mixture of amethyst and citrine with zones of purple and yellow or orange. Almost all commercially available ametrine is mined in Bolivia. The colour of the zones visible within ametrine are due to differing oxidation states of iron within the crystal. The citrine segments have oxidized iron while the amethyst segments are unoxidized. The different oxidation states occur due to there being a temperature gradient across the crystal during its formation. Artificial ametrine is created from natural citrine through beta irradiation, or from an amethyst that is turned into citrine through differential heat treatment. Ametrine in the low price segment may stem from synthetic material. Green-yellow or golden-blue ametrine does not exist naturally.</p>
-
-<ul class="ui list">
-<li><strong>Category:</strong> Silicate mineral</li>
-<li><strong>Formula, (repeating unit):</strong> Silica (silicon dioxide, SiO 2)</li>
-<li><strong>Crystal system:</strong> Hexagonal
-<li><strong>Formula mass:</strong> 60.08 g/mol
-<li><strong>Color:</strong> Purple, Yellow
-<li><strong>Crystal habit:</strong> 6-sided prism ending in 6-sided pyramid (typical)
-<li><strong>Twinning:</strong> Dauphine law and Brazil law
-<li><strong>Cleavage:</strong> none
-<li><strong>Fracture:</strong> Conchoidal
-<li><strong>Mohs scale hardness:</strong> 7
-<li><strong>Lustre:</strong> Vitreous
-<li><strong>Streak:</strong> white
-<li><strong>Diaphaneity:</strong> Transparent to translucent
-<li><strong>Specific gravity:</strong> 2.65
-<li><strong>Optical properties:</strong> Unixal (+)
-<li><strong>Refractive index:</strong> n ω
-<li><strong>Birefringence:</strong> +0.009
-<li><strong>Pleochroism:</strong> Amethyst section shows weak to moderate purple/reddish purple, Citrine section shows very weak yellow/orange
-<li><strong>Melting point:</strong> 1650±75 °C
-<li><strong>Diagnostic features:</strong> Distinct segments that are purple and yellow
-<li><strong>Solubility:</strong> Insoluble in common solvents
-<li><strong>Common impurities:</strong> Iron
-</ul>
-
-</div>
+        <div class="ui text container">
+            <h2>About Ametrine</h2>
+            <p>Ametrine, also known as trystine or by its trade name as bolivianite, is a naturally occurring variety of quartz. It is a mixture of amethyst and citrine with zones of purple and yellow or orange. Almost all commercially available ametrine is mined in Bolivia. The colour of the zones visible within ametrine are due to differing oxidation states of iron within the crystal. The citrine segments have oxidized iron while the amethyst segments are unoxidized. The different oxidation states occur due to there being a temperature gradient across the crystal during its formation. Artificial ametrine is created from natural citrine through beta irradiation, or from an amethyst that is turned into citrine through differential heat treatment. Ametrine in the low price segment may stem from synthetic material. Green-yellow or golden-blue ametrine does not exist naturally.</p>
+            <ul class="ui list">
+                <li><strong>Category:</strong> Silicate mineral</li>
+                <li><strong>Formula, (repeating unit):</strong> Silica (silicon dioxide, SiO 2)</li>
+                <li><strong>Crystal system:</strong> Hexagonal
+                <li><strong>Formula mass:</strong> 60.08 g/mol
+                <li><strong>Color:</strong> Purple, Yellow
+                <li><strong>Crystal habit:</strong> 6-sided prism ending in 6-sided pyramid (typical)
+                <li><strong>Twinning:</strong> Dauphine law and Brazil law
+                <li><strong>Cleavage:</strong> none
+                <li><strong>Fracture:</strong> Conchoidal
+                <li><strong>Mohs scale hardness:</strong> 7
+                <li><strong>Lustre:</strong> Vitreous
+                <li><strong>Streak:</strong> white
+                <li><strong>Diaphaneity:</strong> Transparent to translucent
+                <li><strong>Specific gravity:</strong> 2.65
+                <li><strong>Optical properties:</strong> Unixal (+)
+                <li><strong>Refractive index:</strong> n ω
+                <li><strong>Birefringence:</strong> +0.009
+                <li><strong>Pleochroism:</strong> Amethyst section shows weak to moderate purple/reddish purple, Citrine section shows very weak yellow/orange
+                <li><strong>Melting point:</strong> 1650±75 °C
+                <li><strong>Diagnostic features:</strong> Distinct segments that are purple and yellow
+                <li><strong>Solubility:</strong> Insoluble in common solvents
+                <li><strong>Common impurities:</strong> Iron
+            </ul>
+        </div>
     </section>
-    <footer role="contentinfo" class="ui center aligned container">
- .
+    <footer role="contentinfo" class="">
+
+<div class="ui doubling stackable centered grid container">
+                <div class="middle aligned center aligned column">
+                    
+                    <h1 class="beautiful ui header"><span class="content">ametrine@tuta.io</span>
+                    </h1>
+                </div>
+        </div>
+
     </footer>
 </body>
 
